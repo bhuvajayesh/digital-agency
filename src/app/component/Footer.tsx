@@ -109,17 +109,17 @@ export default function Footer() {
   return (
     <div className="w-full border-t border-[#262626]">
       <div className="container mx-auto px-4">
-        <div className="py-6 lg:py-[50px] flex items-center justify-between border-b border-[#262626]">
+        <div className="py-6 lg:py-[50px] flex flex-col md:flex-row gap-[30px] md:gap-0 items-center justify-between md:border-b border-[#262626]">
           <Link href="/">
-            <Image src={Logo} alt="logo" className="h-10 md:h-12 lg:h-auto w-auto" />
+            <Image src={Logo} alt="logo" className="h-12 lg:h-auto w-auto" />
           </Link>
-          <ul className="hidden md:flex gap-3 lg:gap-5 xl:gap-[30px]">
+          <ul className="flex flex-wrap md:flex-nowrap justify-center gap-5 md:gap-3 lg:gap-5 xl:gap-[30px]">
             {Menu.map((data, i) => {
               return (
                 <li key={i}>
                   <Link
                     href={data.menuLink}
-                    className="text-[#E6E6E6] text-sm lg:text-lg font-medium inline-block"
+                    className="text-[#E6E6E6] md:text-sm lg:text-lg font-medium inline-block"
                   >
                     {data.menuName}
                   </Link>
@@ -127,8 +127,8 @@ export default function Footer() {
               );
             })}
           </ul>
-          <div className="flex items-center border border-[#262626] rounded-xl p-2 lg:p-3 xl:p-3.5 xl:pl-6">
-            <h3 className="text-lg font-medium mr-5 text-[#E6E6E6] hidden xl:block">
+          <div className="flex flex-col md:flex-row items-center border border-[#262626] rounded-xl p-2 lg:p-3 xl:p-3.5 xl:pl-6 w-full md:w-auto">
+            <h3 className="text-lg font-medium mb-3 md:mb-0 md:mr-5 text-[#E6E6E6] md:hidden xl:block">
               Stay Connected
             </h3>
             <ul className="flex gap-3 lg:gap-3.5">
@@ -150,11 +150,11 @@ export default function Footer() {
           </div>
         </div>
         <div className="py-6 lg:py-[50px] flex flex-col lg:flex-row items-center justify-between">
-          <ul className="hidden md:flex gap-3 lg:gap-5 xl:gap-[30px]">
-            <li className="lg:pt-0.5 pb-3 lg:pb-4 border-b border-[#262626]">
+          <ul className="w-full md:w-auto flex flex-col md:flex-row gap-3 lg:gap-5 xl:gap-[30px]">
+            <li className="lg:pt-0.5 pb-3 lg:pb-4 border-b border-[#262626] w-full md:w-auto">
               <Link
                 href="mailto:hello@squareup.com"
-                className="flex items-center gap-2.5 text-[#E6E6E6] lg:text-lg"
+                className="flex items-center justify-center md:justify-start gap-2.5 text-[#E6E6E6] lg:text-lg"
               >
                 <svg
                   width="24"
@@ -175,10 +175,10 @@ export default function Footer() {
                 hello@squareup.com
               </Link>
             </li>
-            <li className="lg:pt-0.5 pb-3 lg:pb-4 border-b border-[#262626]">
+            <li className="lg:pt-0.5 pb-3 lg:pb-4 border-b border-[#262626] w-full md:w-auto">
               <Link
                 href="tel:+91 91813 23 2309"
-                className="flex items-center gap-2.5 text-[#E6E6E6] lg:text-lg"
+                className="flex items-center justify-center md:justify-start gap-2.5 text-[#E6E6E6] lg:text-lg"
               >
                 <svg
                   width="24"
@@ -197,7 +197,7 @@ export default function Footer() {
                 +91 91813 23 2309
               </Link>
             </li>
-            <li className="lg:pt-0.5 pb-3 lg:pb-4 border-b border-[#262626] flex items-center gap-2.5 text-[#E6E6E6] lg:text-lg">
+            <li className="lg:pt-0.5 pb-3 lg:pb-4 border-b border-[#262626] flex justify-center md:justify-start items-center gap-2.5 text-[#E6E6E6] lg:text-lg">
               <svg
                 width="24"
                 height="25"
@@ -215,7 +215,7 @@ export default function Footer() {
               Somewhere in the World
             </li>
           </ul>
-          <div className="lg:text-lg text-[#98989A] md:pt-4 lg:pt-0">
+          <div className="lg:text-lg text-[#98989A] pt-4 lg:pt-0">
             © {currentYear} SquareUp. All rights reserved.
           </div>
         </div>

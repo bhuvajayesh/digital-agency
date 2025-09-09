@@ -3,16 +3,16 @@ import Image from "next/image";
 import Header from "../component/Header";
 import Footer from "../component/Footer";
 import ButtonLight from "../component/ButtonLight";
-import workPic1 from "../../../public/images/work-pic1.jpg";
-import workPic2 from "../../../public/images/work-pic2.jpg";
-import workPic3 from "../../../public/images/work-pic3.jpg";
-import workPic4 from "../../../public/images/work-pic4.jpg";
-import workPic5 from "../../../public/images/work-pic5.jpg";
-import workPic6 from "../../../public/images/work-pic6.jpg";
-import workPic7 from "../../../public/images/work-pic7.jpg";
-import workPic8 from "../../../public/images/work-pic8.jpg";
-import workPic9 from "../../../public/images/work-pic9.jpg";
-import workPic10 from "../../../public/images/work-pic10.jpg";
+import workPic1 from "../../../public/images/work/work-pic1.jpg";
+import workPic2 from "../../../public/images/work/work-pic2.jpg";
+import workPic3 from "../../../public/images/work/work-pic3.jpg";
+import workPic4 from "../../../public/images/work/work-pic4.jpg";
+import workPic5 from "../../../public/images/work/work-pic5.jpg";
+import workPic6 from "../../../public/images/work/work-pic6.jpg";
+import workPic7 from "../../../public/images/work/work-pic7.jpg";
+import workPic8 from "../../../public/images/work/work-pic8.jpg";
+import workPic9 from "../../../public/images/work/work-pic9.jpg";
+import workPic10 from "../../../public/images/work/work-pic10.jpg";
 import Link from "next/link";
 
 export const ourWorks = [
@@ -129,7 +129,7 @@ export default function Work() {
               <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-[normal] font-semibold mb-3.5">
                 At SquareUp
               </h2>
-              <p className="mb-[50px] text-lg text-[#E6E6E6]">
+              <p className="mb-6 md:mb-10 lg:mb-[50px] md:text-lg text-[#E6E6E6]">
                 We have had the privilege of working with a diverse range of
                 clients and delivering exceptional digital products that drive
                 success.
@@ -138,16 +138,16 @@ export default function Work() {
                 Here are ten examples of our notable works:
               </div>
             </div>
-            <div className="grid grid-cols-2">
+            <div className="grid md:grid-cols-2">
               {ourWorks.map((data, i) => (
                 <div
                   key={i}
                   className="border-y border-[#262626] not-even:border-r"
                 >
-                  <h2 className="text-[26px] leading-[normal] font-medium text-[#98989A] py-[30px] px-[50px] border-b border-[#262626]">
+                  <h2 className="text-lg lg:text-xl 2xl:text-[26px] leading-[normal] font-medium text-[#98989A] p-6 xl:py-[30px] xl:px-[50px] border-b border-[#262626]">
                     {data.workCategory}
                   </h2>
-                  <div className="px-[50px] pt-[30px] pb-[100px]">
+                  <div className="p-6 xl:px-[50px] xl:pt-[30px] xl:pb-[100px]">
                     <div className="overflow-hidden rounded-xl">
                       <Image
                         src={data.workPic}
@@ -155,12 +155,12 @@ export default function Work() {
                         className="w-full transition-transform duration-300 ease-out hover:scale-105"
                       />
                     </div>
-                    <div className="py-[30px] flex items-center">
+                    <div className="py-5 md:py-[30px] flex items-center">
                       <div className="flex-1">
-                        <h3 className="text-2xl font-medium text-[#E6E6E6] mb-2.5">
+                        <h3 className="text-lg lg:text-xl 2xl:text-2xl font-medium text-[#E6E6E6]">
                           {data.workTitle}
                         </h3>
-                        <label className="py-2.5 px-3.5 bg-[#262626] rounded-lg text-xl text-[#98989A] inline-block">
+                        <label className="py-2.5 px-3.5 bg-[#262626] rounded-lg text-xl text-[#98989A] mt-2.5 hidden lg:inline-block">
                           {data.workWebsite}
                         </label>
                       </div>
@@ -168,7 +168,7 @@ export default function Work() {
                         <Link
                           href={data.workLink}
                           target="_blank"
-                          className="w-[54px] aspect-square bg-[#262626] hover:bg-black rounded-lg flex items-center justify-center"
+                          className="w-12 lg:w-[54px] aspect-square bg-[#262626] hover:bg-black rounded-lg flex items-center justify-center"
                         >
                           <svg
                             width="34"
@@ -187,7 +187,7 @@ export default function Work() {
                         </Link>
                       </div>
                     </div>
-                    <p className="text-lg text-[#98989A]">{data.workDisc}</p>
+                    <p className="xl:text-lg leading-[normal] xl:leading-[inherit] text-[#98989A]">{data.workDisc}</p>
                   </div>
                 </div>
               ))}
