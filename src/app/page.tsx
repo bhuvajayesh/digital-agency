@@ -352,7 +352,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="pt-[77px] md:pt-[93px] lg:pt-[101px]">
+      <main className="pt-[69px] md:pt-[93px] lg:pt-[101px]">
         <div className="container mx-auto px-4">
           <div className="border-x border-[#262626]">
             <div className="bg-[url(/images/banner-bg.png)] bg-cover bg-center pt-12 md:pt-20 pb-24 md:pb-32 lg:pt-[112px] lg:pb-44 xl:pb-[274px] text-center">

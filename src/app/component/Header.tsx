@@ -60,7 +60,7 @@ export default function Header() {
               );
             })}
           </ul>
-          <ButtonLight className="py-3 px-4 lg:px-6 lg:py-4">
+          <ButtonLight className="py-2 px-3 md:py-3 md:px-4 lg:px-6 lg:py-4">
             Contact Us
           </ButtonLight>
         </div>

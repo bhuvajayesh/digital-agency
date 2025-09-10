@@ -112,7 +112,7 @@ export default function Work() {
   return (
     <>
       <Header />
-      <main className="pt-[77px] md:pt-[93px] lg:pt-[101px]">
+      <main className="pt-[69px] md:pt-[93px] lg:pt-[101px]">
         <div className="container mx-auto px-4">
           <div className="border-x border-[#262626]">
             <div className="bg-[url(/images/about-us.png)] bg-cover bg-center py-10 md:py-20 lg:py-[120px] px-4 text-center">
@@ -187,50 +187,52 @@ export default function Work() {
                         </Link>
                       </div>
                     </div>
-                    <p className="xl:text-lg leading-[normal] xl:leading-[inherit] text-[#98989A]">{data.workDisc}</p>
+                    <p className="xl:text-lg leading-[normal] xl:leading-[inherit] text-[#98989A]">
+                      {data.workDisc}
+                    </p>
                   </div>
                 </div>
               ))}
             </div>
-          </div>
-          <div className="bg-[url(/images/thank-you-bg.png)] bg-cover bg-center py-10 md:py-20 lg:py-[120px] px-4 text-center">
-            <div className="w-16 md:w-20 aspect-square bg-[#9EFF00] rounded-2xl flex items-center justify-center mx-auto">
-              <svg
-                width="44"
-                height="48"
-                viewBox="0 0 44 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-8 h-auto md:w-auto"
-              >
-                <path
-                  d="M0.666749 11.4287L22.0001 24.0001L22.0001 48.0001L0.666748 35.8096L0.666749 11.4287Z"
-                  fill="#1A1A1A"
-                />
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M23.8824 23.9832V44.7563L41.451 34.7171V13.6302L23.8824 23.9832ZM43.3334 35.8095L22.0001 47.9999V24L0.666748 11.4286L22.0001 0L43.3334 11.4286V35.8095ZM40.4642 12.0269L22.0001 2.13544L4.50703 11.5067L22.927 22.3613L40.4642 12.0269Z"
-                  fill="#1A1A1A"
-                />
-              </svg>
+            <div className="bg-[url(/images/thank-you-bg.png)] bg-cover bg-center py-10 md:py-20 lg:py-[120px] px-4 text-center">
+              <div className="w-16 md:w-20 aspect-square bg-[#9EFF00] rounded-2xl flex items-center justify-center mx-auto">
+                <svg
+                  width="44"
+                  height="48"
+                  viewBox="0 0 44 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-8 h-auto md:w-auto"
+                >
+                  <path
+                    d="M0.666749 11.4287L22.0001 24.0001L22.0001 48.0001L0.666748 35.8096L0.666749 11.4287Z"
+                    fill="#1A1A1A"
+                  />
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M23.8824 23.9832V44.7563L41.451 34.7171V13.6302L23.8824 23.9832ZM43.3334 35.8095L22.0001 47.9999V24L0.666748 11.4286L22.0001 0L43.3334 11.4286V35.8095ZM40.4642 12.0269L22.0001 2.13544L4.50703 11.5067L22.927 22.3613L40.4642 12.0269Z"
+                    fill="#1A1A1A"
+                  />
+                </svg>
+              </div>
+              <div className="my-6 md:my-10 lg:my-[50px]">
+                <h3 className="text-2xl md:text-4xl lg:text-[38px] font-semibold leading-[normal]">
+                  Let us Bring your Ideas to Life in the Digital World.
+                </h3>
+                <p className="mt-3.5 md:text-lg text-[#E6E6E6]">
+                  No matter which services you choose, we are committed to
+                  delivering exceptional results that exceed your{" "}
+                  <br className="hidden lg:block" /> expectations. Our
+                  multidisciplinary team works closely together to ensure
+                  seamless collaboration and a unified vision{" "}
+                  <br className="hidden lg:block" /> for your digital product.
+                </p>
+              </div>
+              <ButtonLight className="py-3.5 px-7 lg:py-[18px] lg:px-[34px]">
+                Start Project
+              </ButtonLight>
             </div>
-            <div className="my-6 md:my-10 lg:my-[50px]">
-              <h3 className="text-2xl md:text-4xl lg:text-[38px] font-semibold leading-[normal]">
-                Let us Bring your Ideas to Life in the Digital World.
-              </h3>
-              <p className="mt-3.5 md:text-lg text-[#E6E6E6]">
-                No matter which services you choose, we are committed to
-                delivering exceptional results that exceed your{" "}
-                <br className="hidden lg:block" /> expectations. Our
-                multidisciplinary team works closely together to ensure seamless
-                collaboration and a unified vision{" "}
-                <br className="hidden lg:block" /> for your digital product.
-              </p>
-            </div>
-            <ButtonLight className="py-3.5 px-7 lg:py-[18px] lg:px-[34px]">
-              Start Project
-            </ButtonLight>
           </div>
         </div>
       </main>

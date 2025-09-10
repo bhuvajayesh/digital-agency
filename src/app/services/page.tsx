@@ -262,7 +262,7 @@ export default function Services() {
   return (
     <>
       <Header />
-      <main className="pt-[77px] md:pt-[93px] lg:pt-[101px]">
+      <main className="pt-[69px] md:pt-[93px] lg:pt-[101px]">
         <div className="container mx-auto px-4">
           <div className="border-x border-[#262626]">
             <div className="bg-[url(/images/service-bg.png)] bg-cover bg-center py-10 md:py-20 lg:py-[120px] px-4 text-center">
