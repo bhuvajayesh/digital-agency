@@ -3,45 +3,43 @@ import Image from "next/image";
 import Header from "../component/Header";
 import Footer from "../component/Footer";
 import ButtonLight from "../component/ButtonLight";
-import budgetSlider from "../../../public/images/budget.svg";
-import { useState } from "react";
 
 export const aboutList = [
   {
     processNum: "01",
-    processTitle: "Discovery",
+    processTitle: "Design",
     processDisc:
-      "We begin by thoroughly understanding your business goals, target audience, and project requirements. We conduct in-depth research to gather insights and define project objectives, allowing us to develop a tailored strategy.",
+      "Once upon a time, in a world driven by technology, a group of talented designers came together with a shared vision. They believed that design could shape the way people interacted with digital products. With their passion for aesthetics and usability, they founded SquareUp Digital Product Agency's design department. Their mission was to create visually stunning and user-friendly interfaces that would leave a lasting impression.",
   },
   {
     processNum: "02",
-    processTitle: "Planning and Strategy",
+    processTitle: "Engineering",
     processDisc:
-      "Based on the gathered information, we create a comprehensive project plan and strategy. This includes defining project milestones, timelines, deliverables, and resource allocation. We collaborate closely with you to align our strategy with your vision.",
+      "Meanwhile, a team of brilliant engineers was busy crafting the backbone of digital innovation. With their expertise in coding and development, they founded the engineering division of SquareUp. They believed that technology had the power to transform ideas into reality. Their mission was to build robust, scalable, and cutting-edge digital solutions that would push the boundaries of what was possible.",
   },
   {
     processNum: "03",
-    processTitle: "Design",
+    processTitle: "Project Management",
     processDisc:
-      "Our expert designers translate the project requirements into captivating visual designs. We create wireframes, mockups, and interactive prototypes to showcase the user interface, user experience, and overall design aesthetics. We iterate on the designs based on your feedback until we achieve the perfect look and feel.",
+      "In the midst of the creative and technical minds, a group of project managers emerged as the glue that held everything together. They understood the importance of effective communication, organization, and efficient execution. With their skills in planning and coordination, they founded SquareUp's project management team. Their mission was to ensure that every project ran smoothly, on time, and within budget.",
   },
   {
     processNum: "04",
-    processTitle: "Development",
+    processTitle: "Collaboration",
     processDisc:
-      "Once the designs are approved, our skilled development team brings them to life. We use cutting-edge technologies and coding best practices to build robust and scalable digital products. Throughout the development phase, we maintain open lines of communication to keep you updated on progress and address any questions or concerns.",
+      "At SquareUp, these three departments came together to form a cohesive and collaborative unit. They embraced the power of collaboration and recognized that their combined expertise would result in truly exceptional digital products. They believed that by working closely with their clients, understanding their needs, and involving them in the creative process, they could deliver solutions that surpassed expectations.",
   },
   {
     processNum: "05",
-    processTitle: "Testing and Quality Assurance",
+    processTitle: "Client-Centric Approach",
     processDisc:
-      "We conduct rigorous testing to ensure that your digital product functions flawlessly across different devices, browsers, and operating systems. Our quality assurance team meticulously checks for bugs, usability issues, and performance bottlenecks. We strive for a seamless user experience and a high level of reliability.",
+      "SquareUp's success was not solely measured by their technical prowess or design skills but by their unwavering commitment to their clients. They placed their clients at the center of everything they did. They took the time to listen, understand their unique challenges, and tailor their services to meet their specific requirements. Their mission was to become trusted partners, guiding businesses on their digital journey.",
   },
   {
     processNum: "06",
-    processTitle: "Deployment and Launch",
+    processTitle: "Driving Success",
     processDisc:
-      "When your digital product is thoroughly tested and meets your satisfaction, we prepare for deployment. We handle all the technical aspects of launching your product, ensuring a smooth transition from development to the live environment. We assist with setting up hosting, configuring servers, and managing any required integrations.",
+      "With each project, SquareUp's reputation grew. Their portfolio expanded to include a diverse range of industries and their impact was felt far and wide. From startups to established enterprises, businesses sought out SquareUp for their expertise in creating digital products that delivered tangible results. SquareUp's success was driven by their passion for innovation, their dedication to quality, and their commitment to helping their clients succeed in the digital world.",
   },
 ];
 
@@ -59,23 +57,103 @@ export default function AboutUs() {
               <p className="mt-3.5 md:text-lg lg:text-xl text-[#E6E6E6]">
                 Welcome to SquareUp, where collaboration, expertise, and
                 client-centricity intersect to shape the future of digital{" "}
-                <br className="hidden lg:block" />
+                <br className="hidden 2xl:block" />
                 innovation.
               </p>
             </div>
-            <div className="pt-10 md:pt-20 pb-10 xl:pt-[120px] xl:pb-[50px] px-4 md:px-6 xl:px-10 2xl:px-[50px] border-t border-[#262626]">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-[normal] font-semibold mb-3.5">
-                At SquareUp
-              </h2>
-              <p className="mb-6 md:mb-10 lg:mb-[50px] md:text-lg text-[#E6E6E6]">
-                We follow a structured and collaborative process to ensure the
-                successful delivery of exceptional digital products. Our process
-                combines industry best <br className="hidden lg:block" />{" "}
-                practices, creative thinking, and a client-centric approach.
-              </p>
-              <div className="md:text-lg lg:text-xl xl:text-[22px] leading-[normal] bg-[#262626] rounded-lg py-3 px-3.5 inline-block">
-                Here's an overview of our typical process:
+            <div className="py-10 px-4 md:p-10 lg:p-20 xl:py-[100px] xl:px-[150px] border-t border-[#262626] flex flex-col md:flex-row items-center gap-10 md:gap-16 lg:gap-20 xl:gap-[100px]">
+              <div className="flex-1">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-[normal] font-semibold mb-5">
+                  About SquareUp
+                </h2>
+                <p className="lg:text-lg xl:text-xl text-[#E6E6E6]">
+                  SquareUp is a digital product agency that is passionate about
+                  crafting exceptional digital experiences. We specialize in
+                  design, engineering, and project management, helping
+                  businesses thrive in the digital landscape. At SquareUp, we
+                  follow a structured and collaborative process to ensure the
+                  successful delivery of exceptional digital products. Our
+                  process combines industry best practices, creative thinking,
+                  and a client-centric approach.
+                </p>
               </div>
+              <div className="lg:flex-1 bg-[url(/images/about-squareup-bg.jpg)] bg-cover bg-center w-60 lg:w-auto h-60 lg:h-96 xl:h-[500px] flex items-center justify-center">
+                <svg
+                  width="151"
+                  height="150"
+                  viewBox="0 0 151 150"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-20 lg:w-32 xl:w-[150px] h-auto aspect-square"
+                >
+                  <g filter="url(#filter0_i_285_13)">
+                    <rect width="150.704" height="150" rx="27" fill="#9EFF00" />
+                    <path
+                      d="M35.3516 51.4286L75.3516 75V120L35.3516 97.1428L35.3516 51.4286Z"
+                      fill="#1A1A1A"
+                    />
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M78.881 74.9684V113.918L111.822 95.0946V55.5567L78.881 74.9684ZM115.352 97.1428L75.3516 120V74.9999L35.3516 51.4285L75.3516 30L115.352 51.4285V97.1428ZM109.972 52.5505L75.3516 34.004L42.5521 51.5751L77.0895 71.9275L109.972 52.5505Z"
+                      fill="#1A1A1A"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_i_285_13"
+                      x="0"
+                      y="0"
+                      width="150.703"
+                      height="150"
+                      filterUnits="userSpaceOnUse"
+                      colorInterpolationFilters="sRGB"
+                    >
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                      />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feMorphology
+                        radius="16"
+                        operator="erode"
+                        in="SourceAlpha"
+                        result="effect1_innerShadow_285_13"
+                      />
+                      <feOffset />
+                      <feGaussianBlur stdDeviation="11.5" />
+                      <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                      />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_285_13"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <div className="py-10 px-6 md:p-10 xl:py-[100px] xl:px-[50px] border-t border-[#262626]">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-[58px] leading-[normal] font-semibold">
+                Our Story
+              </h2>
             </div>
             <div className="grid md:grid-cols-2">
               {aboutList.map((data, i) => (
@@ -87,7 +165,7 @@ export default function AboutUs() {
                     <h2 className="text-6xl md:text-5xl lg:text-8xl xl:text-[120px] 2xl:text-[150px] leading-none font-semibold text-[#D8FF99]">
                       {data.processNum}
                     </h2>
-                    <label className="flex-1 text-xl md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-medium text-[#98989A] pb-4 lg:pb-[26px] border-b border-[#262626]">
+                    <label className="flex-1 text-xl md:text-lg lg:text-xl xl:text-2xl 2xl:text-[38px] font-semibold text-[#D8FF99] pb-3.5 md:pb-4 lg:pb-[26px] border-b border-[#262626]">
                       {data.processTitle}
                     </label>
                   </div>
@@ -97,42 +175,115 @@ export default function AboutUs() {
                 </div>
               ))}
             </div>
-            <div className="bg-[url(/images/thank-you-bg.png)] bg-cover bg-center py-10 md:py-20 lg:py-[120px] px-4 text-center">
-              <div className="w-16 md:w-20 aspect-square bg-[#9EFF00] rounded-2xl flex items-center justify-center mx-auto">
-                <svg
-                  width="44"
-                  height="48"
-                  viewBox="0 0 44 48"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-8 h-auto md:w-auto"
-                >
-                  <path
-                    d="M0.666749 11.4287L22.0001 24.0001L22.0001 48.0001L0.666748 35.8096L0.666749 11.4287Z"
-                    fill="#1A1A1A"
-                  />
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M23.8824 23.9832V44.7563L41.451 34.7171V13.6302L23.8824 23.9832ZM43.3334 35.8095L22.0001 47.9999V24L0.666748 11.4286L22.0001 0L43.3334 11.4286V35.8095ZM40.4642 12.0269L22.0001 2.13544L4.50703 11.5067L22.927 22.3613L40.4642 12.0269Z"
-                    fill="#1A1A1A"
-                  />
-                </svg>
+            <div className="py-10 px-5 md:p-10 lg:p-20">
+              <div className="flex flex-col md:flex-row items-center gap-6 lg:gap-10 text-center md:text-left">
+                <div className="flex-none">
+                  <svg
+                    width="151"
+                    height="150"
+                    viewBox="0 0 151 150"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-20 lg:w-32 xl:w-[150px] h-auto aspect-square"
+                  >
+                    <g filter="url(#filter0_i_285_13)">
+                      <rect
+                        width="150.704"
+                        height="150"
+                        rx="27"
+                        fill="#9EFF00"
+                      />
+                      <path
+                        d="M35.3516 51.4286L75.3516 75V120L35.3516 97.1428L35.3516 51.4286Z"
+                        fill="#1A1A1A"
+                      />
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M78.881 74.9684V113.918L111.822 95.0946V55.5567L78.881 74.9684ZM115.352 97.1428L75.3516 120V74.9999L35.3516 51.4285L75.3516 30L115.352 51.4285V97.1428ZM109.972 52.5505L75.3516 34.004L42.5521 51.5751L77.0895 71.9275L109.972 52.5505Z"
+                        fill="#1A1A1A"
+                      />
+                    </g>
+                    <defs>
+                      <filter
+                        id="filter0_i_285_13"
+                        x="0"
+                        y="0"
+                        width="150.703"
+                        height="150"
+                        filterUnits="userSpaceOnUse"
+                        colorInterpolationFilters="sRGB"
+                      >
+                        <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="BackgroundImageFix"
+                          result="shape"
+                        />
+                        <feColorMatrix
+                          in="SourceAlpha"
+                          type="matrix"
+                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha"
+                        />
+                        <feMorphology
+                          radius="16"
+                          operator="erode"
+                          in="SourceAlpha"
+                          result="effect1_innerShadow_285_13"
+                        />
+                        <feOffset />
+                        <feGaussianBlur stdDeviation="11.5" />
+                        <feComposite
+                          in2="hardAlpha"
+                          operator="arithmetic"
+                          k2="-1"
+                          k3="1"
+                        />
+                        <feColorMatrix
+                          type="matrix"
+                          values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in2="shape"
+                          result="effect1_innerShadow_285_13"
+                        />
+                      </filter>
+                    </defs>
+                  </svg>
+                </div>
+                <div className="flex-1">
+                  <h2 className="mb-4 xl:mb-5 text-xl lg:text-2xl xl:text-3xl font-medium text-[#98989A]">
+                    Today, SquareUp Continues to Thrive as a Leading Digital
+                    Product Agency.....
+                  </h2>
+                  <p className="text-sm md:text-base xl:text-lg text-[#98989A]">
+                    Combining the power of design, engineering, and project
+                    management to create transformative digital experiences.
+                    They invite you to join them on their journey and discover
+                    how they can help bring your digital ideas to life.
+                  </p>
+                </div>
               </div>
-              <div className="my-6 md:my-10 lg:my-[50px]">
-                <h3 className="text-2xl md:text-4xl lg:text-[38px] font-semibold leading-[normal]">
-                  Thank you for your Interest in SquareUp.
-                </h3>
-                <p className="mt-3.5 md:text-lg text-[#E6E6E6]">
-                  We would love to hear from you and discuss how we can help
-                  bring your digital ideas to life. Here are the different ways{" "}
-                  <br className="hidden lg:block" /> you can get in touch with
-                  us.
-                </p>
+              <div className="mt-[30px] md:mt-[50px] p-5 md:py-6 md:px-10 border border-[#262626] rounded-xl flex flex-wrap lg:flex-nowrap justify-center lg:justify-start items-center gap-3.5 lg:gap-5">
+                <span className="text-lg text-[#98989A]">
+                  Welcome to SquareUp
+                </span>
+                <div className="xl:pr-5 lg:flex-1">
+                  <label
+                    htmlFor=""
+                    className="bg-[#262626] py-2.5 px-3.5 md:py-3.5 md:px-5 rounded-lg xl:text-lg inline-block text-center lg:text-left"
+                  >
+                    Where collaboration, Expertise, and Client-Centricity
+                    Intersect to Shape the Future of Digital Innovation.
+                  </label>
+                </div>
+                <ButtonLight className="py-3.5 px-7 lg:py-[18px] lg:px-[34px] w-full md:w-auto">
+                  Start Project
+                </ButtonLight>
               </div>
-              <ButtonLight className="py-3.5 px-7 lg:py-[18px] lg:px-[34px]">
-                Start Project
-              </ButtonLight>
             </div>
           </div>
         </div>
