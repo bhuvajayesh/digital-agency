@@ -14,7 +14,7 @@ export default function ButtonDark({
 }: ButtonLightProps) {
   return (
     <button
-      className={`cursor-pointer bg-[rgba(36,36,36,0.2)] border border-[#333333] text-lg font-medium rounded-lg hover:bg-black transition ${className}`}
+      className={`cursor-pointer bg-[rgba(36,36,36,0.2)] border border-[#333333] md:text-lg font-medium rounded-lg hover:bg-black transition ${className}`}
       {...props}
     >
       {children}

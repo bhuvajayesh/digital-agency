@@ -2,255 +2,148 @@
 import Image from "next/image";
 import Header from "../component/Header";
 import Footer from "../component/Footer";
-import designServiceIcon1 from "../../../public/images/services/design-service-icon1.svg";
-import designServiceIcon2 from "../../../public/images/services/design-service-icon2.svg";
-import designServiceIcon3 from "../../../public/images/services/design-service-icon3.svg";
-import designServiceIcon4 from "../../../public/images/services/design-service-icon4.svg";
-import designServiceIcon5 from "../../../public/images/services/design-service-icon5.svg";
-import designServiceIcon6 from "../../../public/images/services/design-service-icon6.svg";
-import designServiceIcon7 from "../../../public/images/services/design-service-icon7.svg";
-import designServiceIcon8 from "../../../public/images/services/design-service-icon8.svg";
-import designServiceIcon9 from "../../../public/images/services/design-service-icon9.svg";
-import designServiceIcon10 from "../../../public/images/services/design-service-icon10.svg";
-import designServiceIcon11 from "../../../public/images/services/design-service-icon11.svg";
-import designServiceIcon12 from "../../../public/images/services/design-service-icon12.svg";
-import engServiceIcon1 from "../../../public/images/services/eng-service-icon1.svg";
-import engServiceIcon2 from "../../../public/images/services/eng-service-icon2.svg";
-import engServiceIcon3 from "../../../public/images/services/eng-service-icon3.svg";
-import engServiceIcon4 from "../../../public/images/services/eng-service-icon4.svg";
-import engServiceIcon5 from "../../../public/images/services/eng-service-icon5.svg";
-import engServiceIcon6 from "../../../public/images/services/eng-service-icon6.svg";
-import engServiceIcon7 from "../../../public/images/services/eng-service-icon7.svg";
-import engServiceIcon8 from "../../../public/images/services/eng-service-icon8.svg";
-import engServiceIcon9 from "../../../public/images/services/eng-service-icon9.svg";
-import engServiceIcon10 from "../../../public/images/services/eng-service-icon10.svg";
-import engServiceIcon11 from "../../../public/images/services/eng-service-icon11.svg";
-import engServiceIcon12 from "../../../public/images/services/eng-service-icon12.svg";
-import pmServiceIcon1 from "../../../public/images/services/pm-service-icon1.svg";
-import pmServiceIcon2 from "../../../public/images/services/pm-service-icon2.svg";
-import pmServiceIcon3 from "../../../public/images/services/pm-service-icon3.svg";
-import pmServiceIcon4 from "../../../public/images/services/pm-service-icon4.svg";
-import pmServiceIcon5 from "../../../public/images/services/pm-service-icon5.svg";
-import pmServiceIcon6 from "../../../public/images/services/pm-service-icon6.svg";
-import pmServiceIcon7 from "../../../public/images/services/pm-service-icon7.svg";
-import pmServiceIcon8 from "../../../public/images/services/pm-service-icon8.svg";
-import pmServiceIcon9 from "../../../public/images/services/pm-service-icon9.svg";
-import pmServiceIcon10 from "../../../public/images/services/pm-service-icon10.svg";
-import pmServiceIcon11 from "../../../public/images/services/pm-service-icon11.svg";
-import pmServiceIcon12 from "../../../public/images/services/pm-service-icon12.svg";
+import designjobIcon1 from "../../../public/images/careers/design-job-icon1.svg";
+import designjobIcon2 from "../../../public/images/careers/design-job-icon2.svg";
+import designjobIcon3 from "../../../public/images/careers/design-job-icon3.svg";
+import devjobIcon1 from "../../../public/images/careers/design-job-icon1.svg";
+import devjobIcon2 from "../../../public/images/careers/dev-job-icon2.svg";
+import devjobIcon3 from "../../../public/images/careers/dev-job-icon3.svg";
+import managerjobIcon1 from "../../../public/images/careers/mana-job-icon1.svg";
+import managerjobIcon2 from "../../../public/images/careers/mana-job-icon2.svg";
+import managerjobIcon3 from "../../../public/images/careers/mana-job-icon3.svg";
+import qajobIcon1 from "../../../public/images/careers/qa-job-icon1.svg";
+import qajobIcon2 from "../../../public/images/careers/qa-job-icon2.svg";
+import qajobIcon3 from "../../../public/images/careers/qa-job-icon3.svg";
 import ButtonLight from "../component/ButtonLight";
+import TodaySquareUp from "../component/TodaySquareUp";
 
-export const servicesCategory = [
+export const careersList = [
   {
-    category: "Design",
-    description:
-      "At Squareup, our design team is passionate about creating stunning, user-centric designs that captivate your audience and elevate your brand. We believe that great design is not just about aesthetics; it's about creating seamless and intuitive user experiences.",
-    title: "Our design services include:",
-    sections: [
-      {
-        title: "User Experience (UX) Design",
-        items: [
-          {
-            icon: designServiceIcon1,
-            title: "User Research and Persona Development",
-          },
-          {
-            icon: designServiceIcon2,
-            title: "Information Architecture and Wireframing",
-          },
-          {
-            icon: designServiceIcon3,
-            title: "Interactive Prototyping and User Testing",
-          },
-          {
-            icon: designServiceIcon4,
-            title: "UI Design and Visual Branding",
-          },
-        ],
-      },
-      {
-        title: "User Interface (UI) Design",
-        items: [
-          {
-            icon: designServiceIcon5,
-            title: "Intuitive and Visually Appealing Interface Design",
-          },
-          {
-            icon: designServiceIcon6,
-            title: "Custom Iconography and Illustration",
-          },
-          {
-            icon: designServiceIcon7,
-            title: "Typography and Color Palette Selection",
-          },
-          {
-            icon: designServiceIcon8,
-            title: "Responsive Design for Various Devices",
-          },
-        ],
-      },
-      {
-        title: "Branding and Identity",
-        items: [
-          {
-            icon: designServiceIcon9,
-            title: "Logo Design and Visual Identity Development",
-          },
-          {
-            icon: designServiceIcon10,
-            title: "Brand Strategy and Positioning",
-          },
-          {
-            icon: designServiceIcon11,
-            title: "Brand Guidelines and Style Guides",
-          },
-          {
-            icon: designServiceIcon12,
-            title:
-              "Marketing Collateral Design (Brochures, Business Cards, etc.)",
-          },
-        ],
-      },
-    ],
+    careersListTitle: "Innovative and Impactful Projects",
+    careersListDisc:
+      "At SquareUp, you'll have the opportunity to work on exciting and impactful projects that shape the digital landscape. From designing intuitive user interfaces to developing robust software solutions, you'll be part of a team that creates products that make a difference.",
   },
   {
-    category: "Engineering",
-    description:
-      "Our engineering team combines technical expertise with a passion for innovation to build robust and scalable digital solutions. We leverage the latest technologies and best practices to deliver high-performance applications tailored to your specific needs.",
-    title: "Our engineering services include:",
-    sections: [
-      {
-        title: "Web Development",
-        items: [
-          {
-            icon: engServiceIcon1,
-            title: "Front-End Development (HTML, CSS, JavaScript)",
-          },
-          {
-            icon: engServiceIcon2,
-            title: "Back-End Development (PHP, Python, Ruby)",
-          },
-          {
-            icon: engServiceIcon3,
-            title:
-              "Content Management System (CMS) Development (WordPress, Drupal)",
-          },
-          {
-            icon: engServiceIcon4,
-            title: "E-Commerce Platform Development (Magento, Shopify)",
-          },
-        ],
-      },
-      {
-        title: "Mobile App Development",
-        items: [
-          {
-            icon: engServiceIcon5,
-            title: "Native iOS and Android App Development",
-          },
-          {
-            icon: engServiceIcon6,
-            title: "Cross-Platform App Development (React Native, Flutter)",
-          },
-          {
-            icon: engServiceIcon7,
-            title: "App Prototyping and UI/UX Design Integration",
-          },
-          {
-            icon: engServiceIcon8,
-            title: "App Testing, Deployment, and Maintenance",
-          },
-        ],
-      },
-      {
-        title: "Custom Software Development",
-        items: [
-          {
-            icon: engServiceIcon9,
-            title: "Enterprise Software Development",
-          },
-          {
-            icon: engServiceIcon10,
-            title: "Custom Web Application Development",
-          },
-          {
-            icon: engServiceIcon11,
-            title: "Integration with Third-Party APIs and Systems",
-          },
-          {
-            icon: engServiceIcon12,
-            title: "Legacy System Modernization and Migration",
-          },
-        ],
-      },
-    ],
+    careersListTitle: "Supportive Environment",
+    careersListDisc:
+      "At SquareUp, you'll have the opportunity to work on exciting and impactful projects that shape the digital landscape. From designing intuitive user interfaces to developing robust software solutions, you'll be part of a team that creates products that make a difference.",
   },
   {
-    category: "Project Management",
-    description:
-      "Our experienced project management team ensures that your projects are delivered on time, within budget, and according to your specifications. We follow industry-standard methodologies and employ effective communication and collaboration tools to keep you informed throughout the development process.",
-    title: "Our project management services include:",
+    careersListTitle: "Continuous Learning and Growth",
+    careersListDisc:
+      "We believe in investing in our team's growth and development. We provide opportunities for continuous learning, whether it's through workshops, training programs, or attending industry conferences. At SquareUp, you'll have the chance to expand your skill set and stay up-to-date with the latest trends and technologies.",
+  },
+  {
+    careersListTitle: "Challenging and Rewarding Work",
+    careersListDisc:
+      "Our projects are challenging, but the rewards are even greater. We tackle complex problems and push ourselves to deliver innovative solutions. You'll be empowered to take ownership of your work, make a real impact, and see your ideas come to life.",
+  },
+];
+
+export const currentOpenings = [
+  {
     sections: [
       {
-        title: "Project Planning and Scoping",
+        title: "Design Job Openings",
         items: [
           {
-            icon: pmServiceIcon1,
-            title: "Requirements Gathering and Analysis",
+            icon: designjobIcon1,
+            title: "UI Designer",
+            disctiption:
+              "Bring your creativity and expertise to our team as a UI Designer. Collaborate with cross-functional teams to design visually stunning and user-friendly interfaces. Utilize your skills in layout design, typography, and color theory to create engaging digital experiences that leave a lasting impression.",
+            applyNow: "Apply Now",
           },
           {
-            icon: pmServiceIcon2,
-            title: "Project Roadmap and Timeline Development",
+            icon: designjobIcon2,
+            title: "UX Designer",
+            disctiption:
+              "Join us as a UX Designer and help shape exceptional user experiences. Conduct user research, analyze data, and create wireframes and prototypes to design intuitive and user-centric interfaces. Collaborate closely with UI Designers, developers, and stakeholders to ensure seamless and enjoyable user journeys.",
+            applyNow: "Apply Now",
           },
           {
-            icon: pmServiceIcon3,
-            title: "Resource Allocation and Task Assignment",
-          },
-          {
-            icon: pmServiceIcon4,
-            title: "Risk Assessment and Mitigation Strategies",
+            icon: designjobIcon3,
+            title: "Design Head",
+            disctiption:
+              "Lead our design team as a Design Head and drive the creative vision of our products. Provide strategic direction, mentorship, and guidance to UI and UX designers. Collaborate with cross-functional teams to ensure design consistency and elevate our brand identity through innovative and visually impactful designs.",
+            applyNow: "Apply Now",
           },
         ],
       },
       {
-        title: "Agile Development",
+        title: "Development Job Openings",
         items: [
           {
-            icon: pmServiceIcon5,
-            title: "Iterative Development and Sprints",
+            icon: devjobIcon1,
+            title: "Front - End Developer",
+            disctiption:
+              "Join our team as a Front-End Developer and bring our designs to life. Transform UI/UX wireframes into interactive web interfaces using HTML, CSS, and JavaScript. Collaborate closely with designers and back-end developers to ensure seamless integration and optimal user experiences.",
+            applyNow: "Apply Now",
           },
           {
-            icon: pmServiceIcon6,
-            title: "Scrum or Kanban Methodology Implementation",
+            icon: devjobIcon2,
+            title: "Back - End  Developer",
+            disctiption:
+              "Be part of our team as a Backend Developer and contribute to building robust and scalable web applications. Develop server-side logic, integrate databases, and optimize system performance. Collaborate with front-end developers to ensure smooth communication between the server and the user interface.",
+            applyNow: "Apply Now",
           },
           {
-            icon: pmServiceIcon7,
-            title: "Regular Progress Updates and Demos",
-          },
-          {
-            icon: pmServiceIcon8,
-            title: "Continuous Improvement and Feedback Incorporation",
+            icon: devjobIcon3,
+            title: "Full Stack Developer",
+            disctiption:
+              "Join us as a Full Stack Developer and take on end-to-end responsibility for web application development. Combine your skills in both front-end and back-end technologies to create dynamic and responsive websites. Collaborate with designers, developers, and stakeholders to deliver comprehensive and user-friendly solutions.",
+            applyNow: "Apply Now",
           },
         ],
       },
       {
-        title: "Quality Assurance and Testing",
+        title: "Management Job Openings",
         items: [
           {
-            icon: pmServiceIcon9,
-            title: "Test Planning and Execution",
+            icon: managerjobIcon1,
+            title: "BA Manager",
+            disctiption:
+              "Lead our business analysis team as a BA Manager and drive strategic initiatives. Gather and analyze requirements, facilitate communication between stakeholders, and ensure project alignment with business objectives. Provide leadership and mentorship to a team of talented business analysts.",
+            applyNow: "Apply Now",
           },
           {
-            icon: pmServiceIcon10,
-            title: "Functional and Usability Testing",
+            icon: managerjobIcon2,
+            title: "Project Manager",
+            disctiption:
+              "Join our team as a Project Manager and oversee the successful delivery of projects from initiation to completion. Define project scope, manage timelines and resources, and ensure effective communication across cross-functional teams. Utilize your leadership and organizational skills to drive project success.",
+            applyNow: "Apply Now",
           },
           {
-            icon: pmServiceIcon11,
-            title: "Performance and Security Testing",
+            icon: managerjobIcon3,
+            title: "HR Manager",
+            disctiption:
+              "Be part of our team as an HR Manager and play a vital role in managing our human resources. Lead talent acquisition, employee engagement, and performance management initiatives. Collaborate with leadership to develop and implement HR strategies that foster a positive and inclusive work culture.",
+            applyNow: "Apply Now",
+          },
+        ],
+      },
+      {
+        title: "QA Job Openings",
+        items: [
+          {
+            icon: qajobIcon1,
+            title: "QA Tester",
+            disctiption:
+              "Ensure the quality of our software products as a QA Tester. Develop test plans, execute test cases, and identify and report software defects. Collaborate with developers and stakeholders to ensure that our products meet high-quality standards and deliver an exceptional user experience.",
+            applyNow: "Apply Now",
           },
           {
-            icon: pmServiceIcon12,
-            title: "Bug Tracking and Issue Resolution",
+            icon: qajobIcon2,
+            title: "SQL Tester",
+            disctiption:
+              "Join us as an SQL Tester and play a key role in testing and validating the integrity of our databases. Write complex SQL queries to perform data validation and identify any anomalies. Collaborate with developers and QA testers to ensure the accuracy and reliability of our data.",
+            applyNow: "Apply Now",
+          },
+          {
+            icon: qajobIcon3,
+            title: "Manual Tester",
+            disctiption:
+              "Be part of our team as a Manual Tester and perform comprehensive manual testing to ensure the quality and functionality of our software applications. Develop test cases, execute test scripts, and document test results. Collaborate with developers and QA testers to troubleshoot issues and enhance software performance.",
+            applyNow: "Apply Now",
           },
         ],
       },
@@ -276,57 +169,81 @@ export default function Careers() {
             </div>
             <div className="">
               <div className="pt-10 md:pt-20 pb-10 xl:pt-[120px] xl:pb-[50px] px-4 md:px-6 xl:px-10 2xl:px-[50px] border-t border-[#262626]">
-                <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-[normal] font-semibold mb-3.5">
+                <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl leading-[normal] font-semibold mb-3.5">
                   Welcome to SquareUp, where talent meets opportunity!
                 </h2>
-                <p className="text-sm md:text-lg mb-[30px] md:mb-[50px] text-[#E6E6E6]">
+                <p className="text-sm md:text-base lg:text-lg mb-[30px] md:mb-[50px] text-[#E6E6E6]">
                   At SquareUp, we believe that the success of our agency lies in
                   the talent, passion, and dedication of our team members. We
-                  are a digital product agency that <br /> thrives on
-                  innovation, creativity, and collaboration. If you're ready to
-                  make a difference and contribute to cutting-edge projects, we
-                  invite you to explore <br />
+                  are a digital product agency that{" "}
+                  <br className="hidden 2xl:block" /> thrives on innovation,
+                  creativity, and collaboration. If you're ready to make a
+                  difference and contribute to cutting-edge projects, we invite
+                  you to explore <br className="hidden 2xl:block" />
                   career opportunities with us.
                 </p>
                 <div className="md:text-lg lg:text-xl xl:text-[22px] leading-[normal] bg-[#262626] rounded-lg py-3 px-3.5 inline-block">
                   Why Work at SquareUp?
                 </div>
               </div>
-            </div>
-            <div className="hidden">
-              {servicesCategory.map((service, i) => (
-                <div key={i}>
-                  <div className="pt-10 md:pt-20 pb-10 xl:pt-[120px] xl:pb-[50px] px-4 md:px-6 xl:px-10 2xl:px-[50px] border-t border-[#262626]">
-                    <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-[normal] font-semibold mb-3.5">
-                      {service.category}
+              <div className="grid md:grid-cols-2">
+                {careersList.map((data, i) => (
+                  <div
+                    key={i}
+                    className="py-10 px-6 md:p-6 lg:py-16 lg:px-8 xl:py-20 xl:px-10 2xl:py-[100px] 2xl:px-[50px] not-even:border-r border-t border-[#262626]"
+                  >
+                    <h2 className="text-2xl md:text-xl lg:text-3xl xl:text-4xl 2xl:text-[40px] font-medium text-[#D8FF99] pb-5 mb-5 lg:pb-10 lg:mb-10 2xl:pb-[50px] 2xl:mb-[50px] border-b border-[#262626]">
+                      {data.careersListTitle}
                     </h2>
-                    <p className="text-sm md:text-lg mb-[30px] md:mb-[50px] text-[#E6E6E6]">
-                      {service.description}
+                    <p className="text-sm md:text-base lg:text-lg text-[#98989A]">
+                      {data.careersListDisc}
                     </p>
-                    <div className="md:text-lg lg:text-xl xl:text-[22px] leading-[normal] bg-[#262626] rounded-lg py-3 px-3.5 inline-block">
-                      {service.title}
-                    </div>
                   </div>
-
+                ))}
+              </div>
+            </div>
+            <div>
+              {currentOpenings.map((service, i) => (
+                <div key={i}>
+                  <div className="pt-10 md:pt-20 pb-10 xl:pt-[120px] xl:pb-[50px] px-4 md:px-6 xl:px-10 2xl:px-[50px] border-y border-[#262626]">
+                    <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-[normal] font-semibold mb-3.5">
+                      Current Openings
+                    </h2>
+                    <p className="text-sm md:text-base lg:text-lg text-[#E6E6E6]">
+                      We are always on the lookout for talented individuals who
+                      are passionate about creating exceptional digital
+                      experiences. Whether you're a designer, engineer, project
+                      manager, or have skills that align with our agency's
+                      mission, we encourage you to explore our open positions.
+                    </p>
+                  </div>
                   {service.sections.map((section, j) => (
                     <div key={j}>
-                      <div className="py-10 px-4 md:p-6 xl:p-10 2xl:p-[50px] border-y border-[#262626]">
+                      <div className="py-10 px-4 md:p-6 xl:p-10 2xl:p-[50px]">
                         <h3 className="text-xl lg:text-2xl xl:text-[28px] font-medium text-[#98989A] text-center md:text-left">
                           {section.title}
                         </h3>
                       </div>
-                      <div className="grid grid-cols-2 md:grid-cols-4">
+                      <div className="grid md:grid-cols-3">
                         {section.items.map((item, k) => (
                           <div
                             key={k}
-                            className="not-last:border-r border-y md:border-y-0 border-[#262626] p-5 md:p-6 xl:p-10 2xl:p-[50px]"
+                            className="not-last:border-r border-y border-[#262626] p-5 md:p-6 xl:p-10 2xl:p-[50px] flex flex-col"
                           >
-                            <div className="w-14 md:w-[70px] 2xl:w-[88px] p-2.5 md:p-0 flex items-center justify-center aspect-square rounded-md md:rounded-xl border border-[#262626] bg-[linear-gradient(130.97deg,rgba(158,255,0,0.2)_-66.81%,rgba(158,255,0,0)_37.19%)]">
-                              <Image src={item.icon} alt={item.title} />
+                            <div className="flex-1">
+                              <div className="w-14 md:w-[70px] 2xl:w-[88px] p-2.5 md:p-0 flex items-center justify-center aspect-square rounded-md md:rounded-xl border border-[#262626] bg-[linear-gradient(130.97deg,rgba(158,255,0,0.2)_-66.81%,rgba(158,255,0,0)_37.19%)]">
+                                <Image src={item.icon} alt={item.title} />
+                              </div>
+                              <h4 className="text-xl xl:text-2xl leading-[normal] font-medium text-[#E6E6E6] mt-6 mb-3.5 md:my-5 lg:mt-[30px] lg:mb-5">
+                                {item.title}
+                              </h4>
+                              <p className="text-sm lg:text-lg text-[#E6E6E6] leading-normal mb-5 lg:mb-[30px]">
+                                {item.disctiption}
+                              </p>
                             </div>
-                            <h4 className="lg:text-lg 2xl:text-xl leading-[normal] font-medium text-[#E6E6E6] mt-5 lg:mt-[30px]">
-                              {item.title}
-                            </h4>
+                            <button className="p-[18px] rounded-lg bg-[#262626] hover:bg-[#9EFF00] hover:text-[#262626] transition-all md:text-lg leading-[normal] font-medium w-full cursor-pointer">
+                              {item.applyNow}
+                            </button>
                           </div>
                         ))}
                       </div>
@@ -335,45 +252,7 @@ export default function Careers() {
                 </div>
               ))}
             </div>
-            <div className="bg-[url(/images/thank-you-bg.png)] bg-cover bg-center py-10 md:py-20 lg:py-[120px] px-4 text-center">
-              <div className="w-16 md:w-20 aspect-square bg-[#9EFF00] rounded-2xl flex items-center justify-center mx-auto">
-                <svg
-                  width="44"
-                  height="48"
-                  viewBox="0 0 44 48"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-8 h-auto md:w-auto"
-                >
-                  <path
-                    d="M0.666749 11.4287L22.0001 24.0001L22.0001 48.0001L0.666748 35.8096L0.666749 11.4287Z"
-                    fill="#1A1A1A"
-                  />
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M23.8824 23.9832V44.7563L41.451 34.7171V13.6302L23.8824 23.9832ZM43.3334 35.8095L22.0001 47.9999V24L0.666748 11.4286L22.0001 0L43.3334 11.4286V35.8095ZM40.4642 12.0269L22.0001 2.13544L4.50703 11.5067L22.927 22.3613L40.4642 12.0269Z"
-                    fill="#1A1A1A"
-                  />
-                </svg>
-              </div>
-              <div className="my-6 md:my-10 lg:my-[50px]">
-                <h3 className="text-2xl md:text-4xl lg:text-[38px] font-semibold leading-[normal]">
-                  Let us Bring your Ideas to Life in the Digital World.
-                </h3>
-                <p className="mt-3.5 md:text-lg text-[#E6E6E6]">
-                  No matter which services you choose, we are committed to
-                  delivering exceptional results that exceed your{" "}
-                  <br className="hidden lg:block" /> expectations. Our
-                  multidisciplinary team works closely together to ensure
-                  seamless collaboration and a unified vision{" "}
-                  <br className="hidden lg:block" /> for your digital product.
-                </p>
-              </div>
-              <ButtonLight className="py-3.5 px-7 lg:py-[18px] lg:px-[34px]">
-                Start Project
-              </ButtonLight>
-            </div>
+            <TodaySquareUp />
           </div>
         </div>
       </main>

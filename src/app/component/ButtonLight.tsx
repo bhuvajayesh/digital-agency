@@ -14,7 +14,7 @@ export default function ButtonLight({
 }: ButtonLightProps) {
   return (
     <button
-      className={`cursor-pointer bg-[#9EFF00] text-[#262626] text-lg font-medium rounded-lg hover:bg-white transition ${className}`}
+      className={`cursor-pointer bg-[#9EFF00] text-[#262626] md:text-lg font-medium rounded-lg hover:bg-white transition ${className}`}
       {...props}
     >
       {children}

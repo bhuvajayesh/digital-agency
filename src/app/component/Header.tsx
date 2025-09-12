@@ -41,7 +41,11 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="py-3 md:py-5 flex items-center justify-between">
           <Link href="/">
-            <Image src={Logo} alt="logo" className="h-10 md:h-12 lg:h-auto w-auto" />
+            <Image
+              src={Logo}
+              alt="logo"
+              className="h-10 md:h-12 lg:h-auto w-auto"
+            />
           </Link>
           <ul className="hidden md:flex items-center">
             {Menu.map((data, i) => {
@@ -60,9 +64,11 @@ export default function Header() {
               );
             })}
           </ul>
-          <ButtonLight className="py-2 px-3 md:py-3 md:px-4 lg:px-6 lg:py-4">
-            Contact Us
-          </ButtonLight>
+          <Link href="/contact">
+            <ButtonLight className="py-2 px-3 md:py-3 md:px-4 lg:px-6 lg:py-4">
+              Contact Us
+            </ButtonLight>
+          </Link>
         </div>
       </div>
     </div>
